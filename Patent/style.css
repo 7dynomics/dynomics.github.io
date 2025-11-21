@@ -1,0 +1,209 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    line-height: 1.3;
+    font-weight: 600;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #bb86fc;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #a053f5;
+}
+
+/* Animated Background */
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(45deg, #1a1a2e, #16213e, #0f3460, #2e8a99);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+/* Header */
+header {
+    background: rgba(22, 22, 22, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+nav {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 a {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    font-weight: 500;
+    font-size: 1rem;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    border-color: #bb86fc;
+    color: #fff;
+}
+
+/* Main Content */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 4rem auto;
+}
+
+section {
+    background: rgba(28, 28, 28, 0.9);
+    margin-bottom: 3rem;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.6s forwards ease-out;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Staggered animation for sections */
+section:nth-child(1) { animation-delay: 0.1s; }
+section:nth-child(2) { animation-delay: 0.2s; }
+section:nth-child(3) { animation-delay: 0.3s; }
+section:nth-child(4) { animation-delay: 0.4s; }
+
+
+/* Hero Section */
+#hero {
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 2rem;
+    border: none;
+    box-shadow: none;
+}
+
+.hero-container h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.hero-container p {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    color: #c0c0c0;
+}
+
+.btn {
+    display: inline-block;
+    background: #bb86fc;
+    color: #121212;
+    padding: 0.9rem 2rem;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #a053f5;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Projects Section */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.project-item {
+    background: #2a2a2a;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+
+.project-item h3 {
+    margin-top: 0;
+    color: #bb86fc;
+}
+
+/* Contact Section */
+#contact p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background: #1c1c1c;
+    color: #aaa;
+    margin-top: 4rem;
+}

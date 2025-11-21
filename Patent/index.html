@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>특허 거래소</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1554224155-1696413565d3?q=80&w=2070&auto=format&fit=crop') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+        }
+        .search-bar {
+            max-width: 600px;
+            margin: auto;
+        }
+        .featured-patents {
+            padding: 60px 0;
+        }
+        .patent-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: box-shadow .3s;
+        }
+        .patent-card:hover {
+            box-shadow: 0 4px 15px rgba(0,0,0,.15);
+        }
+        .how-it-works {
+            background-color: #fff;
+            padding: 60px 0;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 40px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">특허 거래소</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">특허 검색</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">특허 등록</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">거래 방법</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">고객 지원</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary ms-2" href="#">로그인</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>미래를 여는 기술, 특허 거래의 시작</h1>
+            <p>혁신적인 아이디어를 찾고, 당신의 기술을 세상에 선보이세요.</p>
+            <div class="search-bar">
+                <div class="input-group">
+                    <input type="text" class="form-control form-control-lg" placeholder="어떤 기술을 찾고 계신가요? (예: AI, 바이오, 반도체)">
+                    <button class="btn btn-primary" type="button">검색</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Patents Section -->
+    <section class="featured-patents">
+        <div class="container">
+            <h2 class="text-center mb-5">주목받는 특허</h2>
+            <div class="row">
+                <!-- Patent 1 -->
+                <div class="col-md-4">
+                    <div class="patent-card">
+                        <h5>차세대 AI 기반 추천 알고리즘</h5>
+                        <p class="text-muted">출원번호: 10-2024-0012345</p>
+                        <p>사용자 행동을 예측하여 개인화된 콘텐츠를 제공하는 혁신적인 AI 알고리즘. 전자상거래, 미디어 플랫폼 등 다양한 분야에 적용 가능합니다.</p>
+                        <a href="#" class="btn btn-outline-primary">상세보기</a>
+                    </div>
+                </div>
+                <!-- Patent 2 -->
+                <div class="col-md-4">
+                    <div class="patent-card">
+                        <h5>친환경 신소재를 이용한 배터리 기술</h5>
+                        <p class="text-muted">출원번호: 10-2024-0054321</p>
+                        <p>기존 리튬 이온 배터리보다 효율이 높고, 환경오염을 최소화하는 새로운 배터리 기술. 전기차 및 에너지 저장 시스템에 적합합니다.</p>
+                        <a href="#" class="btn btn-outline-primary">상세보기</a>
+                    </div>
+                </div>
+                <!-- Patent 3 -->
+                <div class="col-md-4">
+                    <div class="patent-card">
+                        <h5>블록체인 기반 보안 데이터 공유 플랫폼</h5>
+                        <p class="text-muted">출원번호: 10-2024-0098765</p>
+                        <p>데이터 위변조를 원천적으로 차단하고, 안전한 데이터 공유를 보장하는 블록체인 기술. 금융, 의료, 공공 서비스에 활용될 수 있습니다.</p>
+                        <a href="#" class="btn btn-outline-primary">상세보기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="text-center mb-5">특허 거래, 이렇게 진행됩니다</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="p-4">
+                        <h3>1. 특허 검색 및 발견</h3>
+                        <p>키워드, 기술 분야별로 원하는 특허를 쉽게 찾아보세요. 전문가의 추천 특허도 확인할 수 있습니다.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4">
+                        <h3>2. 안전한 거래 협상</h3>
+                        <p>플랫폼 내에서 판매자와 안전하게 협상하고, 전자 계약을 통해 투명한 거래를 진행하세요.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4">
+                        <h3>3. 기술 이전 및 활용</h3>
+                        <p>거래가 완료되면 기술 이전을 지원하고, 사업화 컨설팅을 통해 기술의 가치를 극대화할 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>특허 거래소</h5>
+                    <p>혁신적인 기술과 아이디어가 세상을 만나는 곳. 우리는 기술이 올바르게 평가받고, 필요한 곳에 연결되도록 돕습니다.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>바로가기</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">회사소개</a></li>
+                        <li><a href="#" class="text-white">이용약관</a></li>
+                        <li><a href="#" class="text-white">개인정보처리방침</a></li>
+                        <li><a href="#" class="text-white">고객센터</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>문의하기</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: contact@patent-exchange.com</li>
+                        <li>Phone: 02-1234-5678</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>&copy; 2025 Patent Exchange. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
